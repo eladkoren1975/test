@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RishoniLoop
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("enter a number and I will check if it is a PRIME NUmber");
+			int x1, m1;
+			int sum = 0;
+
+			do
+			{
+
+		
+				m1 = 2;
+				x1 = Convert.ToInt32(Console.ReadLine());
+				while (x1 % m1 != 0 && m1 < x1)
+				{
+					m1++;
+				}
+				if (x1 == m1)
+				{
+					Console.WriteLine("This is Prime");
+					sum = sum + x1;
+				}
+				else
+				{
+					Console.WriteLine("this is not a pr");
+				}
+				// ===========================================================================
+
+			}
+			while (x1 == m1);
+
+			Console.WriteLine(sum);
+
+		}
+	}
+}
